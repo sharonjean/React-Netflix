@@ -4,7 +4,8 @@
   "description": "A two day workshop on a complete intro to React",
   "main": "index.js",
   "scripts": {
-    "test": "standard"
+    "test": "standard",
+    "build": "webpack"
   },
   "license": "MIT",
   "dependencies": {
@@ -58,4 +59,5 @@
     "url": "https://github.com/btholt/complete-intro-to-react/issues"
   },
   "homepage": "https://github.com/btholt/complete-intro-to-react#readme"
+
 }
