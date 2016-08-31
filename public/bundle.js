@@ -48,19 +48,30 @@
 
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(158);
-	var MyTitle = __webpack_require__(159);
 
-	var div = React.DOM.div;
+	var App = function App() {
+	  return React.createElement(
+	    'div',
+	    { className: 'app-container' },
+	    React.createElement(
+	      'div',
+	      { className: 'home-info' },
+	      React.createElement(
+	        'h1',
+	        { className: 'title' },
+	        'NewFlix'
+	      ),
+	      React.createElement('input', { className: 'search', type: 'text', placeholder: 'Search' }),
+	      React.createElement(
+	        'button',
+	        { className: 'browse-all' },
+	        ' or Browse All'
+	      )
+	    )
+	  );
+	};
 
-	var MyTitleFactory = React.createFactory(MyTitle);
-	// var ce = React.createElement
-
-	var MyFirstComponent = div(null, MyTitleFactory({ title: 'Props are great!', color: 'rebeccapurple' }), MyTitleFactory({ title: 'Use props everywhere!', color: 'mediumaquamarine' }), MyTitleFactory({ title: 'Props are the best!', color: 'peru' })
-	// ce(MyTitle, null)
-	// React.createElement(MyTitle, {title: 'Use props everywhere!'})
-	);
-
-	ReactDOM.render(MyFirstComponent, document.getElementById('app'));
+	ReactDOM.render(React.createElement(App, null), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -19783,27 +19794,6 @@
 	'use strict';
 
 	module.exports = __webpack_require__(3);
-
-/***/ },
-/* 159 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var React = __webpack_require__(1);
-
-	var div = React.DOM.div;
-	var h1 = React.DOM.h1;
-
-	var MyTitle = React.createClass({
-	  displayName: 'MyTitle',
-	  render: function render() {
-	    // must use return, can only return one element which is why div is used
-	    return div(null, h1({ style: { color: this.props.color } }, this.props.title));
-	  }
-	});
-
-	module.exports = MyTitle;
 
 /***/ }
 /******/ ]);

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "standard",
-    "build": "webpack"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "license": "MIT",
   "dependencies": {
@@ -59,5 +60,5 @@
     "url": "https://github.com/btholt/complete-intro-to-react/issues"
   },
   "homepage": "https://github.com/btholt/complete-intro-to-react#readme"
-
 }
+
