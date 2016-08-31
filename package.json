@@ -1,9 +1,11 @@
 {
-  "name": "complete-intro-to-react",
+  "name": "react-netflix",
   "version": "1.0.0",
   "description": "A two day workshop on a complete intro to React",
   "main": "index.js",
-  "author": "Brian Holt <btholt@gmail.com>",
+  "scripts": {
+    "test": "standard"
+  },
   "license": "MIT",
   "dependencies": {
     "axios": "0.9.1",
