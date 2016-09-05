@@ -1,23 +1,13 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Vidflix</title>
+  <meta charset="UTF-8">
+  <title>NewFlix</title>
+  <link rel="stylesheet" href="public/normalize.css">
+  <link rel="stylesheet" href="public/style.css">
 </head>
 <body>
-    <div id="app"></div>
-    <script src="node_modules/react/dist/react.js"></script>
-    <script src="node_modules/react-dom/dist/react-dom.js"></script>
-    <script>
-        var div = React.DOM.div
-        var h1 = React.DOM.h1
-
-        var MyFirstComponent = (
-            div(null,
-                h1(null, 'This is my first component!')
-            )
-        )
-
-        ReactDOM.render(MyFirstComponent, document.getElementById('app'))
-    </script>
+  <div id="app"></div>
+  <script src="public/bundle.js"></script>
 </body>
 </html>
+
