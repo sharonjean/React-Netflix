@@ -5,7 +5,7 @@ const data = require('../public/data.json')
 const Search = React.createClass({
   getInitialState () {
     return {
-      searchTerm: 'Search'
+      searchTerm: ''
     }
   },
   handleSearchTermEvent (event) {

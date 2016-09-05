@@ -25767,7 +25767,7 @@
 	  displayName: 'Search',
 	  getInitialState: function getInitialState() {
 	    return {
-	      searchTerm: 'Search'
+	      searchTerm: ''
 	    };
 	  },
 	  handleSearchTermEvent: function handleSearchTermEvent(event) {
