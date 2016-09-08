@@ -4,7 +4,8 @@
   "description": "A two day workshop on a complete intro to React",
   "main": "index.js",
   "scripts": {
-    "test": "standard",
+    "test": "mocha --require test/helpers/setup.js",
+    "lint": "standard",
     "build": "webpack",
     "watch": "webpack --watch"
   },
@@ -22,6 +23,7 @@
   "devDependencies": {
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.2",
+    "babel-polyfill": "^6.13.0",
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-react": "^6.5.0",
     "babel-register": "^6.5.2",
@@ -61,4 +63,3 @@
   },
   "homepage": "https://github.com/btholt/complete-intro-to-react#readme"
 }
-
